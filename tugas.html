@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con">
+        <input type="text" placeholder="masukan nama" id="name">
+        <button type="submit" onclick="tekan()">tekan</button>
+    </div>
+    
+    <script>
+        function tekan(){
+            let name = document.getElementById("name").value
+            let db   = ['alan simbar','putra tunas','imanuel aling'];
+
+            switch(name){
+                case 'alan simbar':
+                    alert("guru TJKT")
+                    break
+
+                case 'putra tunas':
+                    alert("guru TJKT dan PPLG")
+                    break
+                
+                case 'imanuel aling':
+                    alert("guru Bahasa indonesia")
+                    break
+
+                default:
+
+                    if(db.includes(name)){
+                        alert("kamu guru smkn 3 tapi data kamu tidak ada")
+                    }else{
+                        alert("kamu bukag guru di smkn 3 manado")
+                    }
+            }
+        }
+    </script>
+</body>
+</html>
